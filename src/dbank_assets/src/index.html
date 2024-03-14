@@ -1,22 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>dbank</title>
-    <base href="/" />
-    <link rel="icon" href="favicon.ico" />
-    <link type="text/css" rel="stylesheet" href="main.css" />
-  </head>
-  <body>
-    <main>
-      <img src="logo.png" alt="DFINITY logo" />
-      <form action="#">
-        <label for="name">Enter your name: &nbsp;</label>
-        <input id="name" alt="Name" type="text" />
-        <button type="submit">Click Me!</button>
-      </form>
-      <section id="greeting"></section>
-    </main>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dbank</title>
+  <link type="text/css" rel="stylesheet" href="main.css"/>
+  <style>
+    .main {
+      text-align: center;
+      
+     
+    }
+    .marq {
+      background-color: aquamarine;
+      height : 40px;
+      
+    }
+    .geek1 { 
+            font-size: 20px; 
+            font-weight: bold; 
+            padding-top: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main"> 
+    <marquee class="marq"  
+             direction="right" loop=""> 
+        <div class="geek1"> 
+            DBANK APPLICATION 
+        </div> 
+        </marquee>
+        </div>
+
+  <div class="container">
+    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/c0312e97962741.5ed134e33b2a4.png" alt="logo" width="100"/>
+    <h1>Current Balance:$<span id="value"></span></h1>
+    <div class="divider"></div>
+    <form action="#">
+      <h2>Amount to Top Up</h2>
+      <input id="input-amount" type="number" step="0.01" min=0 name="topup" value=""/><br>
+      <h2>Amount to Withdraw</h2>
+      <input id="Withdraw-amount" type="number" step="0.01" min=0 name="withdraw" value=""/><br>
+      <input id="submit-btn" type="submit"  value="Finalise Transaction"/>
+
+
+
+    </form>
+  </div>
+  
+</body>
 </html>
